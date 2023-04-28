@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>TP 2</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="busqueda">
+        <h1>Rick & Morty API</h1>
+        <div>
+          <label for="id">ID</label>
+          <input type="number" id="id" />
+          <button onclick="getCharacter()">Buscar</button>
+        </div>
+        <div class="character-card">
+          <div class="character-image">
+            <img id="imagen" />
+          </div>
+          <div class="card-body">
+            <h2 id="nombre">Nombre:</h2>
+            <p id="especie"></p>
+            <p id="estado">Estado:</p>
+            <ul id="episodios"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>
