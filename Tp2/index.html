@@ -11,21 +11,19 @@
     <main class="container">
       <div class="busqueda">
         <h1>Rick & Morty API</h1>
-        <div>
-          <label for="id">ID</label>
-          <input type="number" id="id" />
-          <button onclick="getCharacter()">Buscar</button>
+        <label for="id">ID</label>
+        <input type="number" id="id" />
+        <button onclick="getCharacter()">Buscar</button>
+      </div>
+      <div class="character-card">
+        <div class="character-image">
+          <img id="imagen" />
         </div>
-        <div class="character-card">
-          <div class="character-image">
-            <img id="imagen" />
-          </div>
-          <div class="card-body">
-            <h2 id="nombre">Nombre:</h2>
-            <p id="especie"></p>
-            <p id="estado">Estado:</p>
-            <ul id="episodios"></ul>
-          </div>
+        <div class="card-body">
+          <h2 id="nombre"></h2>
+          <p id="especie"></p>
+          <p id="estado"></p>
+          <ul id="episodios"></ul>
         </div>
       </div>
     </main>

@@ -24,7 +24,6 @@ const getCharacter = async () => {
   );
 
   const episodesResponse = await requestEpisodes.json();
-  console.log(episodesResponse);
   nombre.textContent = character.name;
   estado.textContent = character.status;
   especie.textContent = character.species;
@@ -33,15 +32,14 @@ const getCharacter = async () => {
     const elementos = episodesResponse
       .map(
         (ep) => `<li>
-      <h4>${ep.name} - ${ep.episode}</h4>
+      <h4><span class="ep">${ep.episode}:</span> ${ep.name}</h4>
       </li>`
       )
       .join("");
 
     episodios.innerHTML = elementos;
   } else {
-    episodios.innerHTML =
-      episodesResponse.name + " - " + episodesResponse.episode;
+    episodios.innerHTML = `<h4><span class="ep">${episodesResponse.episode}:</span> ${episodesResponse.name}</h4>`;
   }
   imagen.src = character.image;
   if (character.status === "Alive") {
