@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Clase 04-05-23</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Rick & Morty API</h1>
+      <div class="busqueda">
+        <div class="contenedor-busqueda">
+          <div class="form-control">
+            <label for="id1">ID 1</label>
+            <input type="number" id="id1" />
+          </div>
+          <div class="form-control">
+            <label for="id2">ID 2</label>
+            <input type="number" id="id2" />
+          </div>
+          <div class="form-control">
+            <button onclick="getCharacter()">Buscar</button>
+          </div>
+        </div>
+      </div>
+      <div id="characters-container"></div>
+      <div id="resultado"></div>
+    </main>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>
